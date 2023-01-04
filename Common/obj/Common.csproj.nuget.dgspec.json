@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {}
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

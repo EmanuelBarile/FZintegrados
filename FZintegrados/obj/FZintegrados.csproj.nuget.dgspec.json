@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj": {}
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -189,8 +189,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
               }
             }
           }
@@ -240,14 +240,14 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj",
         "projectName": "FZintegrados",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\FZintegrados\\FZintegrados.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\FZintegrados\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\FZintegrados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -269,14 +269,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\Services.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\Services.csproj"
               }
             }
           }
@@ -333,14 +333,14 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -362,14 +362,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -419,14 +419,14 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\Services.csproj": {
+    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -448,14 +448,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Repositories\\Repositories.csproj"
+              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj"
               }
             }
           }

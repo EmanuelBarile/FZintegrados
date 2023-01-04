@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w2CrFQsbJxBVeEu2pGzg5NujT7/FR/T7bHkW4DCIOtJz3NDa0qIKOBXlqVHz3iy6ra4vxoi/y+NvwRtvn3s2Vg==",
+  "dgSpecHash": "zGDEF9Erm5wsU0XjY3bazUS9wZJFGmlK9ibKasUy8P/22y511Nafvu3R3Led3inhlyGl/uihKmlb+ByhkOu27g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucho\\Desktop\\FZ Integrados\\FZintegrados\\Contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucho\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lucho\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
