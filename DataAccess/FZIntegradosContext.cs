@@ -20,7 +20,7 @@ namespace DataAccess
 
         public DbSet<Recorredor> Recorredores { get; set; }
 
-        public DbSet<RegistroDeRecorredor> Registros { get; set; }
+        public DbSet<RegistroDeRecorredor> RegistrosDeRecorredor { get; set; }
 
     }
 }

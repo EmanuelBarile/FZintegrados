@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj": {}
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -80,20 +80,20 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj"
               }
             }
           }
@@ -160,20 +160,20 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -189,8 +189,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj"
               }
             }
           }
@@ -240,20 +240,20 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -269,14 +269,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\DataAccess\\DataAccess.csproj"
               }
             }
           }
