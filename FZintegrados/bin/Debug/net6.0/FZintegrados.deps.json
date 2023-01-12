@@ -11,6 +11,7 @@
           "Common": "1.0.0",
           "Contracts": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.12",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
           "Services": "1.0.0",

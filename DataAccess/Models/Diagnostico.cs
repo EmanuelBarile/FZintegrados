@@ -17,5 +17,8 @@ namespace DataAccess.Models
 
         [Required]
         public string Detalle { get; set; }
+
+
+        public RegistroDeRecorredor RegistroDeRecorredor { get; set; }
     }
 }

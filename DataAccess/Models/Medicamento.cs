@@ -25,7 +25,7 @@ namespace DataAccess.Models
 
         [ForeignKey("Diagnostico")]
         [Column(TypeName = "INT")]
-        public int Cod_Diagnostico { get; set; }
+        public int Id_Diagnostico { get; set; }
 
         public virtual Diagnostico Diagnostico { get; set; }
     }

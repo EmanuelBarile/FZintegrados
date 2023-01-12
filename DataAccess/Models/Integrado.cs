@@ -15,7 +15,7 @@ namespace DataAccess.Models
         public int Id_Integrado { get; set; }
 
         [Required]
-        [Column(TypeName = "VARCHAR(4)")]
+        [Column(TypeName = "VARCHAR(6)")]
         public string Cod_Integrado { get; set; }
 
         [Required]

@@ -21,7 +21,7 @@ namespace DataAccess.Models
         public DateTime Fecha { get; set; }
 
         [Required]
-        [Column(TypeName = "TIME")]
+        [Column(TypeName = "DATE")]
         public DateTime Hora { get; set; }
 
 
@@ -33,7 +33,7 @@ namespace DataAccess.Models
         [Required]
         [ForeignKey("Integrado")]
         [Column(TypeName = "INT")]
-        public int Cod_Integrado { get; set; }
+        public int Id_Integrado { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR(50)")]
