@@ -32,18 +32,33 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Detalle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("VARCHAR(100)");
 
                     b.HasKey("Id_Diagnostico");
 
                     b.ToTable("Diagnosticos");
                 });
 
+            modelBuilder.Entity("DataAccess.Models.DiagnosticoMedicamento", b =>
+                {
+                    b.Property<int>("Diagnostico_Id")
+                        .HasColumnType("INT");
+
+                    b.Property<int>("Medicamento_Id")
+                        .HasColumnType("INT");
+
+                    b.HasKey("Diagnostico_Id", "Medicamento_Id");
+
+                    b.HasIndex("Medicamento_Id");
+
+                    b.ToTable("DiagnosticosMedicamentos");
+                });
+
             modelBuilder.Entity("DataAccess.Models.Integrado", b =>
                 {
                     b.Property<int>("Id_Integrado")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("INT");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Integrado"), 1L, 1);
 
@@ -55,7 +70,7 @@ namespace DataAccess.Migrations
                         .HasColumnType("INT");
 
                     b.Property<DateTime>("FechaInicio")
-                        .HasColumnType("date");
+                        .HasColumnType("DATE");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -74,20 +89,18 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Medicamento"), 1L, 1);
 
-                    b.Property<int>("Cod_Diagnostico")
-                        .HasColumnType("INT");
-
                     b.Property<string>("Cod_Producto")
                         .IsRequired()
                         .HasColumnType("VARCHAR(10)");
+
+                    b.Property<int>("Id_Diagnostico")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("VARCHAR(50)");
 
                     b.HasKey("Id_Medicamento");
-
-                    b.HasIndex("Cod_Diagnostico");
 
                     b.ToTable("Medicamentos");
                 });
@@ -135,7 +148,7 @@ namespace DataAccess.Migrations
                         .HasColumnType("DATE");
 
                     b.Property<DateTime>("Fecha_Real")
-                        .HasColumnType("DATETIME");
+                        .HasColumnType("DATE");
 
                     b.Property<string>("Galpon")
                         .IsRequired()
@@ -169,15 +182,23 @@ namespace DataAccess.Migrations
                     b.ToTable("RegistrosDeRecorredor");
                 });
 
-            modelBuilder.Entity("DataAccess.Models.Medicamento", b =>
+            modelBuilder.Entity("DataAccess.Models.DiagnosticoMedicamento", b =>
                 {
                     b.HasOne("DataAccess.Models.Diagnostico", "Diagnostico")
                         .WithMany()
-                        .HasForeignKey("Cod_Diagnostico")
+                        .HasForeignKey("Diagnostico_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataAccess.Models.Medicamento", "Medicamento")
+                        .WithMany()
+                        .HasForeignKey("Medicamento_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Diagnostico");
+
+                    b.Navigation("Medicamento");
                 });
 
             modelBuilder.Entity("DataAccess.Models.RegistroDeRecorredor", b =>

@@ -15,7 +15,7 @@ namespace DataAccess.Migrations
                 {
                     Id_Diagnostico = table.Column<int>(type: "INT", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Detalle = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Detalle = table.Column<string>(type: "VARCHAR(100)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,16 +26,31 @@ namespace DataAccess.Migrations
                 name: "Integrados",
                 columns: table => new
                 {
-                    Id_Integrado = table.Column<int>(type: "int", nullable: false)
+                    Id_Integrado = table.Column<int>(type: "INT", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Cod_Integrado = table.Column<string>(type: "VARCHAR(6)", nullable: false),
                     Nombre = table.Column<string>(type: "VARCHAR(50)", nullable: false),
                     Crianza = table.Column<int>(type: "INT", nullable: false),
-                    FechaInicio = table.Column<DateTime>(type: "date", nullable: false)
+                    FechaInicio = table.Column<DateTime>(type: "DATE", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Integrados", x => x.Id_Integrado);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Medicamentos",
+                columns: table => new
+                {
+                    Id_Medicamento = table.Column<int>(type: "INT", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Cod_Producto = table.Column<string>(type: "VARCHAR(10)", nullable: false),
+                    Nombre = table.Column<string>(type: "VARCHAR(50)", nullable: false),
+                    Id_Diagnostico = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Medicamentos", x => x.Id_Medicamento);
                 });
 
             migrationBuilder.CreateTable(
@@ -53,23 +68,26 @@ namespace DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Medicamentos",
+                name: "DiagnosticosMedicamentos",
                 columns: table => new
                 {
-                    Id_Medicamento = table.Column<int>(type: "INT", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Cod_Producto = table.Column<string>(type: "VARCHAR(10)", nullable: false),
-                    Nombre = table.Column<string>(type: "VARCHAR(50)", nullable: false),
-                    Cod_Diagnostico = table.Column<int>(type: "INT", nullable: false)
+                    Diagnostico_Id = table.Column<int>(type: "INT", nullable: false),
+                    Medicamento_Id = table.Column<int>(type: "INT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Medicamentos", x => x.Id_Medicamento);
+                    table.PrimaryKey("PK_DiagnosticosMedicamentos", x => new { x.Diagnostico_Id, x.Medicamento_Id });
                     table.ForeignKey(
-                        name: "FK_Medicamentos_Diagnosticos_Cod_Diagnostico",
-                        column: x => x.Cod_Diagnostico,
+                        name: "FK_DiagnosticosMedicamentos_Diagnosticos_Diagnostico_Id",
+                        column: x => x.Diagnostico_Id,
                         principalTable: "Diagnosticos",
                         principalColumn: "Id_Diagnostico",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_DiagnosticosMedicamentos_Medicamentos_Medicamento_Id",
+                        column: x => x.Medicamento_Id,
+                        principalTable: "Medicamentos",
+                        principalColumn: "Id_Medicamento",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -89,7 +107,7 @@ namespace DataAccess.Migrations
                     Cantidad_Medicamento = table.Column<int>(type: "INT", nullable: false),
                     Cantidad_Dias_Tratamiento = table.Column<int>(type: "INT", nullable: false),
                     Comentario = table.Column<string>(type: "VARCHAR(200)", nullable: false),
-                    Fecha_Real = table.Column<DateTime>(type: "DATETIME", nullable: false)
+                    Fecha_Real = table.Column<DateTime>(type: "DATE", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -121,9 +139,9 @@ namespace DataAccess.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Medicamentos_Cod_Diagnostico",
-                table: "Medicamentos",
-                column: "Cod_Diagnostico");
+                name: "IX_DiagnosticosMedicamentos_Medicamento_Id",
+                table: "DiagnosticosMedicamentos",
+                column: "Medicamento_Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RegistrosDeRecorredor_Id_Diagnostico",
@@ -149,7 +167,13 @@ namespace DataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "DiagnosticosMedicamentos");
+
+            migrationBuilder.DropTable(
                 name: "RegistrosDeRecorredor");
+
+            migrationBuilder.DropTable(
+                name: "Diagnosticos");
 
             migrationBuilder.DropTable(
                 name: "Integrados");
@@ -159,9 +183,6 @@ namespace DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Recorredores");
-
-            migrationBuilder.DropTable(
-                name: "Diagnosticos");
         }
     }
 }
