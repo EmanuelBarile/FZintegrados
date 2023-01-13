@@ -10,23 +10,16 @@ using System.Threading.Tasks;
 namespace DataAccess.Models
 {
     public class Medicamento
-    {
-        [Key]
-        [Column(TypeName = "INT")]
+    {        
         public int Id_Medicamento { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR(10)")]
+                
         public string Cod_Producto { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR(50)")]
+                
         public string Nombre { get; set; }
+                
+        public int Id_Diagnostico { get; set; }
 
-        [ForeignKey("Diagnostico")]
-        [Column(TypeName = "INT")]
-        public int Cod_Diagnostico { get; set; }
+        public List<Diagnostico> Diagnosticos { get; set; }
 
-        public virtual Diagnostico Diagnostico { get; set; }
     }
 }

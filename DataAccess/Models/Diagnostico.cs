@@ -10,12 +10,13 @@ using System.Threading.Tasks;
 namespace DataAccess.Models
 {
     public class Diagnostico
-    {
-        [Key]
-        [Column(TypeName = "INT")]
+    {        
         public int Id_Diagnostico { get; set; }
-
-        [Required]
+                
         public string Detalle { get; set; }
+
+        public List<Medicamento> Medicamentos { get; set; }
+
+        
     }
 }
