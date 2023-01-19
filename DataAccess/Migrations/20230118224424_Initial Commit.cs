@@ -28,7 +28,7 @@ namespace DataAccess.Migrations
                 {
                     Id_Integrado = table.Column<int>(type: "INT", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Cod_Integrado = table.Column<string>(type: "VARCHAR(6)", nullable: false),
+                    Cod_Integrado = table.Column<string>(type: "VARCHAR(4)", nullable: false),
                     Nombre = table.Column<string>(type: "VARCHAR(50)", nullable: false),
                     Crianza = table.Column<int>(type: "INT", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "DATE", nullable: false)
@@ -60,7 +60,7 @@ namespace DataAccess.Migrations
                     Id_Recorredor = table.Column<int>(type: "INT", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "VARCHAR(50)", nullable: false),
-                    Clave = table.Column<string>(type: "VARCHAR(20)", nullable: false)
+                    Clave = table.Column<int>(type: "INT", maxLength: 2, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -100,39 +100,37 @@ namespace DataAccess.Migrations
                     Fecha = table.Column<DateTime>(type: "DATE", nullable: false),
                     Hora = table.Column<DateTime>(type: "DATE", nullable: false),
                     Id_Recorredor = table.Column<int>(type: "INT", nullable: false),
-                    Id_Integrado = table.Column<int>(type: "INT", nullable: false),
+                    Cod_Integrado = table.Column<string>(type: "VARCHAR(4)", nullable: false),
                     Galpon = table.Column<string>(type: "VARCHAR(50)", nullable: false),
                     Id_Diagnostico = table.Column<int>(type: "INT", nullable: false),
                     Id_Medicamento = table.Column<int>(type: "INT", nullable: false),
-                    Cantidad_Medicamento = table.Column<int>(type: "INT", nullable: false),
+                    Cantidad_Aves = table.Column<int>(type: "INT", nullable: false),
+                    Cantidad_Medicamento = table.Column<string>(type: "VARCHAR(50)", nullable: false),
                     Cantidad_Dias_Tratamiento = table.Column<int>(type: "INT", nullable: false),
                     Comentario = table.Column<string>(type: "VARCHAR(200)", nullable: false),
-                    Fecha_Real = table.Column<DateTime>(type: "DATE", nullable: false)
+                    Fecha_Real = table.Column<DateTime>(type: "DATE", nullable: false),
+                    RecorredorId_Recorredor = table.Column<int>(type: "INT", nullable: false),
+                    DiagnosticoId_Diagnostico = table.Column<int>(type: "INT", nullable: false),
+                    MedicamentoId_Medicamento = table.Column<int>(type: "INT", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_RegistrosDeRecorredor", x => x.Id_Registro);
                     table.ForeignKey(
-                        name: "FK_RegistrosDeRecorredor_Diagnosticos_Id_Diagnostico",
-                        column: x => x.Id_Diagnostico,
+                        name: "FK_RegistrosDeRecorredor_Diagnosticos_DiagnosticoId_Diagnostico",
+                        column: x => x.DiagnosticoId_Diagnostico,
                         principalTable: "Diagnosticos",
                         principalColumn: "Id_Diagnostico",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RegistrosDeRecorredor_Integrados_Id_Integrado",
-                        column: x => x.Id_Integrado,
-                        principalTable: "Integrados",
-                        principalColumn: "Id_Integrado",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_RegistrosDeRecorredor_Medicamentos_Id_Medicamento",
-                        column: x => x.Id_Medicamento,
+                        name: "FK_RegistrosDeRecorredor_Medicamentos_MedicamentoId_Medicamento",
+                        column: x => x.MedicamentoId_Medicamento,
                         principalTable: "Medicamentos",
                         principalColumn: "Id_Medicamento",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RegistrosDeRecorredor_Recorredores_Id_Recorredor",
-                        column: x => x.Id_Recorredor,
+                        name: "FK_RegistrosDeRecorredor_Recorredores_RecorredorId_Recorredor",
+                        column: x => x.RecorredorId_Recorredor,
                         principalTable: "Recorredores",
                         principalColumn: "Id_Recorredor",
                         onDelete: ReferentialAction.Cascade);
@@ -144,24 +142,19 @@ namespace DataAccess.Migrations
                 column: "Medicamento_Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RegistrosDeRecorredor_Id_Diagnostico",
+                name: "IX_RegistrosDeRecorredor_DiagnosticoId_Diagnostico",
                 table: "RegistrosDeRecorredor",
-                column: "Id_Diagnostico");
+                column: "DiagnosticoId_Diagnostico");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RegistrosDeRecorredor_Id_Integrado",
+                name: "IX_RegistrosDeRecorredor_MedicamentoId_Medicamento",
                 table: "RegistrosDeRecorredor",
-                column: "Id_Integrado");
+                column: "MedicamentoId_Medicamento");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RegistrosDeRecorredor_Id_Medicamento",
+                name: "IX_RegistrosDeRecorredor_RecorredorId_Recorredor",
                 table: "RegistrosDeRecorredor",
-                column: "Id_Medicamento");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_RegistrosDeRecorredor_Id_Recorredor",
-                table: "RegistrosDeRecorredor",
-                column: "Id_Recorredor");
+                column: "RecorredorId_Recorredor");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -170,13 +163,13 @@ namespace DataAccess.Migrations
                 name: "DiagnosticosMedicamentos");
 
             migrationBuilder.DropTable(
+                name: "Integrados");
+
+            migrationBuilder.DropTable(
                 name: "RegistrosDeRecorredor");
 
             migrationBuilder.DropTable(
                 name: "Diagnosticos");
-
-            migrationBuilder.DropTable(
-                name: "Integrados");
 
             migrationBuilder.DropTable(
                 name: "Medicamentos");

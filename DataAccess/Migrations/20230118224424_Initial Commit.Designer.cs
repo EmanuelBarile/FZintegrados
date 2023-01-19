@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(FZIntegradosContext))]
-    [Migration("20230113032610_Initial Commit")]
+    [Migration("20230118224424_Initial Commit")]
     partial class InitialCommit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,7 +66,7 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Cod_Integrado")
                         .IsRequired()
-                        .HasColumnType("VARCHAR(6)");
+                        .HasColumnType("VARCHAR(4)");
 
                     b.Property<int>("Crianza")
                         .HasColumnType("INT");
@@ -115,9 +115,9 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Recorredor"), 1L, 1);
 
-                    b.Property<string>("Clave")
-                        .IsRequired()
-                        .HasColumnType("VARCHAR(20)");
+                    b.Property<int>("Clave")
+                        .HasMaxLength(2)
+                        .HasColumnType("INT");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -136,15 +136,26 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Registro"), 1L, 1);
 
+                    b.Property<int>("Cantidad_Aves")
+                        .HasColumnType("INT");
+
                     b.Property<int>("Cantidad_Dias_Tratamiento")
                         .HasColumnType("INT");
 
-                    b.Property<int>("Cantidad_Medicamento")
-                        .HasColumnType("INT");
+                    b.Property<string>("Cantidad_Medicamento")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(50)");
+
+                    b.Property<string>("Cod_Integrado")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(4)");
 
                     b.Property<string>("Comentario")
                         .IsRequired()
                         .HasColumnType("VARCHAR(200)");
+
+                    b.Property<int>("DiagnosticoId_Diagnostico")
+                        .HasColumnType("INT");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("DATE");
@@ -162,24 +173,25 @@ namespace DataAccess.Migrations
                     b.Property<int>("Id_Diagnostico")
                         .HasColumnType("INT");
 
-                    b.Property<int>("Id_Integrado")
-                        .HasColumnType("INT");
-
                     b.Property<int>("Id_Medicamento")
                         .HasColumnType("INT");
 
                     b.Property<int>("Id_Recorredor")
                         .HasColumnType("INT");
 
+                    b.Property<int>("MedicamentoId_Medicamento")
+                        .HasColumnType("INT");
+
+                    b.Property<int>("RecorredorId_Recorredor")
+                        .HasColumnType("INT");
+
                     b.HasKey("Id_Registro");
 
-                    b.HasIndex("Id_Diagnostico");
+                    b.HasIndex("DiagnosticoId_Diagnostico");
 
-                    b.HasIndex("Id_Integrado");
+                    b.HasIndex("MedicamentoId_Medicamento");
 
-                    b.HasIndex("Id_Medicamento");
-
-                    b.HasIndex("Id_Recorredor");
+                    b.HasIndex("RecorredorId_Recorredor");
 
                     b.ToTable("RegistrosDeRecorredor");
                 });
@@ -207,31 +219,23 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("DataAccess.Models.Diagnostico", "Diagnostico")
                         .WithMany()
-                        .HasForeignKey("Id_Diagnostico")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DataAccess.Models.Integrado", "Integrado")
-                        .WithMany()
-                        .HasForeignKey("Id_Integrado")
+                        .HasForeignKey("DiagnosticoId_Diagnostico")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("DataAccess.Models.Medicamento", "Medicamento")
                         .WithMany()
-                        .HasForeignKey("Id_Medicamento")
+                        .HasForeignKey("MedicamentoId_Medicamento")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("DataAccess.Models.Recorredor", "Recorredor")
                         .WithMany()
-                        .HasForeignKey("Id_Recorredor")
+                        .HasForeignKey("RecorredorId_Recorredor")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Diagnostico");
-
-                    b.Navigation("Integrado");
 
                     b.Navigation("Medicamento");
 
