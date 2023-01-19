@@ -12,7 +12,7 @@ namespace DataAccess.Models
     public class Integrado
     {        
         public int Id_Integrado { get; set; }
-                
+
         public string Cod_Integrado { get; set; }
 
         public string Nombre { get; set; }

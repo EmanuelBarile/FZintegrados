@@ -14,13 +14,14 @@ namespace DataAccess.Models
     {        
         public int Id_Registro { get; set; }
 
-        public DateTime Fecha { get; set; }
 
-        public DateTime Hora { get; set; }
+        public DateTime Fecha { get; set; } 
+
+        public string Hora { get; set; }
 
         public int Id_Recorredor { get; set; }
 
-        public int Id_Integrado { get; set; }
+        public string Cod_Integrado { get; set; }
 
         public string Galpon { get; set; }
 
@@ -28,7 +29,9 @@ namespace DataAccess.Models
 
         public int Id_Medicamento { get; set; }
 
-        public int Cantidad_Medicamento { get; set; }
+        public int Cantidad_Aves { get; set; }
+
+        public string Cantidad_Medicamento { get; set; }
 
         public int Cantidad_Dias_Tratamiento { get; set; }
 
@@ -39,7 +42,6 @@ namespace DataAccess.Models
         
         public virtual Recorredor Recorredor { get; set; }
 
-        public virtual Integrado Integrado { get; set; }
         public virtual Diagnostico Diagnostico { get; set; }
         public virtual Medicamento Medicamento { get; set; }
         

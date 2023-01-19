@@ -152,3 +152,8 @@ C:\Users\Lucho\Desktop\Proyectos\API integrados\FZintegrados\FZintegrados\obj\De
 C:\Users\Lucho\Desktop\Proyectos\API integrados\FZintegrados\FZintegrados\obj\Debug\net6.0\FZintegrados.pdb
 C:\Users\Lucho\Desktop\Proyectos\API integrados\FZintegrados\FZintegrados\obj\Debug\net6.0\FZintegrados.genruntimeconfig.cache
 C:\Users\Lucho\Desktop\Proyectos\API integrados\FZintegrados\FZintegrados\obj\Debug\net6.0\ref\FZintegrados.dll
+C:\Users\Windows11\IntegradosFZ\FZintegrados\FZintegrados\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Windows11\IntegradosFZ\FZintegrados\FZintegrados\bin\Debug\net6.0\MicroElements.Swashbuckle.FluentValidation.dll
+C:\Users\Windows11\IntegradosFZ\FZintegrados\FZintegrados\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Windows11\IntegradosFZ\FZintegrados\FZintegrados\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Windows11\IntegradosFZ\FZintegrados\FZintegrados\bin\Debug\net6.0\Newtonsoft.Json.dll
