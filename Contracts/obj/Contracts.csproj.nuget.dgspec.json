@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {}
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MicroElements.Swashbuckle.FluentValidation": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.12, )"
             },
@@ -80,20 +94,20 @@
         }
       }
     },
-    "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Contracts\\obj\\",
+        "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,8 +123,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lucho\\Desktop\\Proyectos\\API integrados\\FZintegrados\\Common\\Common.csproj"
+              "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Windows11\\IntegradosFZ\\FZintegrados\\Common\\Common.csproj"
               }
             }
           }
@@ -125,7 +139,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MicroElements.Swashbuckle.FluentValidation": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.12, )"
             },

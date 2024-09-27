@@ -1,4 +1,10 @@
+using FZintegrados;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var Startup = new Startup(builder.Configuration);
+
+Startup.ConfigureServices(builder.Services);
 
 // Add services to the container.
 
@@ -23,3 +29,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
+

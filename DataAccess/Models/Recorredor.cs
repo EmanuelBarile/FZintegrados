@@ -11,18 +11,12 @@ namespace DataAccess.Models
 {
     public class Recorredor
     {
-
-        [Key]
-        [Column(TypeName = "INT")]
+                
         public int Id_Recorredor { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR(50)")]
+                
         public string Nombre { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR(20)")]
-        public string Clave { get; set; }
+                
+        public int Clave { get; set; }
 
     }
 }
